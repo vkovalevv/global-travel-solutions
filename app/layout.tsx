@@ -13,9 +13,9 @@ export async function generateMetadata(): Promise<Metadata> {
     (host.startsWith("localhost") ? "http" : "https");
   const baseUrl = new URL(`${protocol}://${host}`);
   const title =
-    "Global Travel Solutions LLC — персональный lifestyle-сервис";
+    "Global Travel Solutions LLC — жеке lifestyle-кызмат";
   const description =
-    "Отели, транспорт, образование, консьерж-сервис и мероприятия по всему миру.";
+    "Мейманканалар, транспорт, билим берүү, консьерж-кызмат жана дүйнө жүзү боюнча иш-чаралар.";
 
   return {
     metadataBase: baseUrl,
@@ -25,13 +25,13 @@ export async function generateMetadata(): Promise<Metadata> {
       title,
       description,
       type: "website",
-      locale: "ru_RU",
+      locale: "ky_KG",
       images: [
         {
           url: new URL("/og.png", baseUrl),
           width: 1672,
           height: 941,
-          alt: "Global Travel Solutions LLC — мир, настроенный под вас",
+          alt: "Global Travel Solutions LLC — сизге ылайыкташкан дүйнө",
         },
       ],
     },
@@ -50,7 +50,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ru">
+    <html lang="ky">
       <body>{children}</body>
     </html>
   );

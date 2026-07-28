@@ -136,6 +136,51 @@ a {
   color: var(--champagne);
 }
 
+.nav-actions {
+  display: flex;
+  align-items: center;
+  justify-self: end;
+  gap: 28px;
+}
+
+.language-switch {
+  display: flex;
+  align-items: center;
+  padding: 3px;
+  border: 1px solid rgba(240, 234, 223, 0.42);
+  border-radius: 999px;
+}
+
+.language-switch button {
+  min-width: 34px;
+  height: 28px;
+  padding: 0 8px;
+  border: 0;
+  border-radius: 999px;
+  color: rgba(240, 234, 223, 0.68);
+  background: transparent;
+  font-family: inherit;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.language-switch button:hover {
+  color: var(--cream);
+}
+
+.language-switch button.active {
+  color: var(--deep);
+  background: var(--champagne);
+}
+
+.language-switch button:focus-visible {
+  outline: 2px solid var(--cream);
+  outline-offset: 3px;
+}
+
 .mobile-menu {
   display: none;
 }
@@ -768,6 +813,10 @@ footer > a:last-child {
     grid-template-columns: 1fr auto;
   }
 
+  .nav-actions {
+    gap: 18px;
+  }
+
   .nav-contact {
     display: none;
   }
@@ -879,6 +928,16 @@ footer > a:last-child {
     gap: 10px;
     font-size: 9px;
     letter-spacing: 0.08em;
+  }
+
+  .nav-actions {
+    gap: 12px;
+  }
+
+  .language-switch button {
+    min-width: 30px;
+    height: 26px;
+    padding-inline: 6px;
   }
 
   .brand-mark {
@@ -1114,6 +1173,12 @@ footer > a:last-child {
     grid-column: 1 / -1;
     grid-row: 2;
     line-height: 1.6;
+  }
+}
+
+@media (max-width: 520px) {
+  .nav .brand > span:last-child {
+    display: none;
   }
 }
 
