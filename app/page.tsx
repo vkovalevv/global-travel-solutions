@@ -60,10 +60,14 @@ export default function Home() {
         <div className="hero-noise" aria-hidden="true" />
 
         <header className="nav shell">
-          <a className="brand" href="#top" aria-label="Élan Privé — на главную">
-            <span className="brand-mark">E</span>
+          <a
+            className="brand"
+            href="#top"
+            aria-label="Global Travel Solutions LLC — на главную"
+          >
+            <span className="brand-mark">G</span>
             <span>
-              ÉLAN <i>PRIVÉ</i>
+              GLOBAL TRAVEL SOLUTIONS <i>LLC</i>
             </span>
           </a>
 
@@ -127,9 +131,10 @@ export default function Home() {
             </p>
             <div className="intro-details">
               <p>
-                Élan Privé объединяет локальную экспертизу и международную сеть
-                партнёров. Мы берём на себя весь путь: понимаем задачу,
-                предлагаем точные варианты и остаёмся рядом до последней детали.
+                Global Travel Solutions LLC объединяет локальную экспертизу и
+                международную сеть партнёров. Мы берём на себя весь путь:
+                понимаем задачу, предлагаем точные варианты и остаёмся рядом до
+                последней детали.
               </p>
               <div className="fact">
                 <strong>24 / 7</strong>
@@ -270,8 +275,11 @@ export default function Home() {
           </h2>
 
           <div className="contact-actions">
-            <a className="email-link" href="mailto:hello@elan-prive.com">
-              hello@elan-prive.com <span>↗</span>
+            <a
+              className="email-link"
+              href="mailto:hello@globaltravelsolutions.com"
+            >
+              hello@globaltravelsolutions.com <span>↗</span>
             </a>
             <div className="messengers">
               <a
@@ -282,7 +290,7 @@ export default function Home() {
                 WhatsApp ↗
               </a>
               <a
-                href="https://t.me/elanprive"
+                href="https://t.me/globaltravelsolutions"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -293,12 +301,15 @@ export default function Home() {
 
           <footer>
             <a className="brand footer-brand" href="#top">
-              <span className="brand-mark">E</span>
+              <span className="brand-mark">G</span>
               <span>
-                ÉLAN <i>PRIVÉ</i>
+                GLOBAL TRAVEL SOLUTIONS <i>LLC</i>
               </span>
             </a>
-            <p>© 2026 Élan Privé. Worldwide lifestyle management.</p>
+            <p>
+              © 2026 Global Travel Solutions LLC. Worldwide lifestyle
+              management.
+            </p>
             <a href="#top">Наверх ↑</a>
           </footer>
         </div>

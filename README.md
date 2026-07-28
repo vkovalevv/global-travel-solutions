@@ -1,4 +1,4 @@
-# Élan Privé
+# Global Travel Solutions LLC
 
 Адаптивный сайт-визитка персонального lifestyle-сервиса: отели, транспорт,
 образование, консьерж-услуги и организация мероприятий по всему миру.
@@ -35,8 +35,8 @@ npm --version
 1. Клонируйте репозиторий и перейдите в папку проекта:
 
    ```bash
-   git clone <URL-РЕПОЗИТОРИЯ>
-   cd travel-site
+   git clone git@github.com:vkovalevv/global-travel-solutions.git
+   cd global-travel-solutions
    ```
 
 2. Установите зависимости:
@@ -107,8 +107,8 @@ public/
 
 Перед рабочим запуском замените демонстрационные данные:
 
-- название `Élan Privé`, если будет использоваться другой бренд;
-- адрес `hello@elan-prive.com`;
+- название `Global Travel Solutions LLC`, если будет использоваться другой бренд;
+- адрес `hello@globaltravelsolutions.com`;
 - ссылки на WhatsApp и Telegram;
 - тексты и список направлений.
 

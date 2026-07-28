@@ -12,7 +12,8 @@ export async function generateMetadata(): Promise<Metadata> {
     requestHeaders.get("x-forwarded-proto") ??
     (host.startsWith("localhost") ? "http" : "https");
   const baseUrl = new URL(`${protocol}://${host}`);
-  const title = "Élan Privé — персональный lifestyle-сервис";
+  const title =
+    "Global Travel Solutions LLC — персональный lifestyle-сервис";
   const description =
     "Отели, транспорт, образование, консьерж-сервис и мероприятия по всему миру.";
 
@@ -30,7 +31,7 @@ export async function generateMetadata(): Promise<Metadata> {
           url: new URL("/og.png", baseUrl),
           width: 1672,
           height: 941,
-          alt: "Élan Privé — мир, настроенный под вас",
+          alt: "Global Travel Solutions LLC — мир, настроенный под вас",
         },
       ],
     },
