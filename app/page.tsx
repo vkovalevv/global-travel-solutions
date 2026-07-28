@@ -130,12 +130,25 @@ export default function Home() {
               <em>своё время</em> выше формальностей.
             </p>
             <div className="intro-details">
-              <p>
-                Global Travel Solutions LLC объединяет локальную экспертизу и
-                международную сеть партнёров. Мы берём на себя весь путь:
-                понимаем задачу, предлагаем точные варианты и остаёмся рядом до
-                последней детали.
-              </p>
+              <div className="about-info">
+                <p>
+                  Global Travel Solutions LLC объединяет локальную экспертизу и
+                  международную сеть партнёров. Мы берём на себя весь путь:
+                  понимаем задачу, предлагаем точные варианты и остаёмся рядом до
+                  последней детали.
+                </p>
+                <address className="company-details">
+                  <strong>Global Travel Solutions LlC</strong>
+                  <span>
+                    Apt. 17, 6 Yubileynaya Street, Zarechnoe, Alamudun District,
+                    Chuy Region, Kyrgyz Republic
+                  </span>
+                  <a href="tel:+996554155955">Tel: +996 554 155 955</a>
+                  <a href="mailto:global74gts@gmail.com">
+                    global74gts@gmail.com
+                  </a>
+                </address>
+              </div>
               <div className="fact">
                 <strong>24 / 7</strong>
                 <span>поддержка без границ и часовых поясов</span>
@@ -277,25 +290,19 @@ export default function Home() {
           <div className="contact-actions">
             <a
               className="email-link"
-              href="mailto:hello@globaltravelsolutions.com"
+              href="mailto:global74gts@gmail.com"
             >
-              hello@globaltravelsolutions.com <span>↗</span>
+              global74gts@gmail.com <span>↗</span>
             </a>
             <div className="messengers">
               <a
-                href="https://wa.me/447700900000"
+                href="https://wa.me/996554155955"
                 target="_blank"
                 rel="noreferrer"
               >
                 WhatsApp ↗
               </a>
-              <a
-                href="https://t.me/globaltravelsolutions"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Telegram ↗
-              </a>
+              <a href="tel:+996554155955">+996 554 155 955 ↗</a>
             </div>
           </div>
 

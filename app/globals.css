@@ -300,11 +300,39 @@ a {
   border-top: 1px solid rgba(16, 24, 23, 0.2);
 }
 
-.intro-details > p {
+.about-info > p {
   margin: 0;
   color: #525752;
   font-size: 14px;
   line-height: 1.9;
+}
+
+.company-details {
+  display: grid;
+  gap: 9px;
+  margin-top: 34px;
+  padding-top: 28px;
+  border-top: 1px solid rgba(16, 24, 23, 0.14);
+  color: #525752;
+  font-size: 13px;
+  font-style: normal;
+  line-height: 1.65;
+}
+
+.company-details strong {
+  color: var(--ink);
+  font-size: 12px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.company-details a {
+  width: max-content;
+  max-width: 100%;
+  color: #6d5938;
+  text-decoration: underline;
+  text-decoration-color: rgba(199, 168, 111, 0.56);
+  text-underline-offset: 4px;
 }
 
 .fact {

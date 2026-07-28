@@ -108,7 +108,7 @@ public/
 Перед рабочим запуском замените демонстрационные данные:
 
 - название `Global Travel Solutions LLC`, если будет использоваться другой бренд;
-- адрес `hello@globaltravelsolutions.com`;
+- адрес `global74gts@gmail.com`;
 - ссылки на WhatsApp и Telegram;
 - тексты и список направлений.
 
