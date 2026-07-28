@@ -16,8 +16,7 @@ const services = [
       en: "Preferred terms, rare room categories and impeccable welcomes at the world’s finest hotels.",
     },
     tag: "STAY",
-    image:
-      "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=85",
+    image: "/images/hotels.jpg",
   },
   {
     number: "02",
@@ -30,8 +29,7 @@ const services = [
       en: "Private aviation, yachts, chauffeured cars and complex logistics without unnecessary waiting.",
     },
     tag: "MOVE",
-    image:
-      "https://images.unsplash.com/photo-1625513123245-fcb02d69ad12?auto=format&fit=crop&w=1200&q=85",
+    image: "/images/transport.jpg",
   },
   {
     number: "03",
@@ -44,8 +42,7 @@ const services = [
       en: "Selection of schools, universities and individual programmes, with support from application to relocation.",
     },
     tag: "GROW",
-    image:
-      "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1200&q=85",
+    image: "/images/education.jpg",
   },
   {
     number: "04",
@@ -58,8 +55,7 @@ const services = [
       en: "One point of contact for everyday requests, from restaurant reservations to sourcing what is not publicly available.",
     },
     tag: "LIVE",
-    image:
-      "https://images.unsplash.com/photo-1496417263034-38ec4f0b665a?auto=format&fit=crop&w=1200&q=85",
+    image: "/images/concierge.jpg",
   },
   {
     number: "05",
@@ -72,8 +68,7 @@ const services = [
       en: "Private premieres, sport, culture and exclusive events, with access and organisation worldwide.",
     },
     tag: "FEEL",
-    image:
-      "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1200&q=85",
+    image: "/images/events.jpg",
   },
 ];
 

@@ -51,8 +51,7 @@ a {
   background:
     linear-gradient(90deg, rgba(5, 12, 11, 0.8) 0%, rgba(5, 12, 11, 0.4) 47%, rgba(5, 12, 11, 0.12) 100%),
     linear-gradient(0deg, rgba(5, 12, 11, 0.56), transparent 55%),
-    url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=2200&q=90")
-      center 56% / cover;
+    url("/images/hero.jpg") center 56% / cover;
   transform: scale(1.03);
   animation: revealImage 1.8s cubic-bezier(0.2, 0.75, 0.2, 1) both;
 }
@@ -564,8 +563,7 @@ a {
   inset: 0;
   background:
     linear-gradient(90deg, rgba(12, 21, 20, 0.18), rgba(12, 21, 20, 0.45)),
-    url("https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=2200&q=90")
-      center / cover;
+    url("/images/approach.jpg") center / cover;
 }
 
 .approach-content {
@@ -690,8 +688,7 @@ a {
   color: var(--cream);
   background:
     linear-gradient(rgba(10, 18, 17, 0.93), rgba(10, 18, 17, 0.97)),
-    url("https://images.unsplash.com/photo-1488085061387-422e29b40080?auto=format&fit=crop&w=2200&q=80")
-      center / cover;
+    url("/images/world.jpg") center / cover;
 }
 
 .contact-top {
@@ -954,8 +951,7 @@ footer > a:last-child {
     background:
       linear-gradient(90deg, rgba(5, 12, 11, 0.7), rgba(5, 12, 11, 0.2)),
       linear-gradient(0deg, rgba(5, 12, 11, 0.7), transparent 70%),
-      url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1000&q=88")
-        60% center / cover;
+      url("/images/hero.jpg") 60% center / cover;
   }
 
   .hero-content {
@@ -1084,8 +1080,7 @@ footer > a:last-child {
   .approach-image {
     background:
       linear-gradient(0deg, rgba(12, 21, 20, 0.25), rgba(12, 21, 20, 0.08)),
-      url("https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1000&q=88")
-        center / cover;
+      url("/images/approach.jpg") center / cover;
   }
 
   .approach-content {
