@@ -1,0 +1,16 @@
+.git
+.gitignore
+.next
+.pnpm-store
+.vinext
+.wrangler
+dist
+node_modules
+coverage
+outputs
+work
+.env*
+*.log
+Dockerfile*
+compose*.yaml
+README.md

@@ -78,6 +78,68 @@ npm run start
 После запуска production-версии сайт также будет доступен по адресу
 `http://localhost:3000`.
 
+## Запуск через Docker
+
+Для запуска необходимы Docker Engine и Docker Compose.
+
+Собрать образ и запустить контейнер:
+
+```bash
+docker compose up -d --build
+```
+
+Сайт будет доступен на `http://localhost:3000`. Контейнер принимает запросы
+только с самого сервера, поэтому для публичного доступа рекомендуется
+использовать Nginx.
+
+Проверить состояние и посмотреть журнал:
+
+```bash
+docker compose ps
+docker compose logs -f website
+```
+
+Остановить контейнер:
+
+```bash
+docker compose down
+```
+
+Обновить сайт на сервере:
+
+```bash
+git pull
+docker compose up -d --build
+```
+
+Если порт `3000` занят, перед запуском можно указать другой локальный порт:
+
+```bash
+APP_PORT=3001 docker compose up -d --build
+```
+
+### Nginx перед Docker
+
+Контейнер по умолчанию доступен на `127.0.0.1:3000`. Пример проксирования:
+
+```nginx
+server {
+    listen 80;
+    server_name example.com www.example.com;
+
+    location / {
+        proxy_pass http://127.0.0.1:3000;
+        proxy_http_version 1.1;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+}
+```
+
+После подключения домена HTTPS можно выпустить через Certbot.
+
 ## Полезные команды
 
 ```bash
@@ -114,6 +176,5 @@ public/
 
 ## Изображения
 
-Фотографии на странице загружаются с Unsplash. Для полностью автономной версии
-их можно скачать в папку `public/` и заменить внешние URL в `app/page.tsx` и
-`app/globals.css` локальными путями.
+Фотографии находятся в `public/images/` и входят в репозиторий, поэтому для
+локального запуска и Docker-контейнера внешняя загрузка изображений не нужна.

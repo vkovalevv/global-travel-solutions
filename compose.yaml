@@ -1,0 +1,14 @@
+services:
+  website:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: global-travel-solutions
+    restart: unless-stopped
+    environment:
+      NODE_ENV: production
+      HOST: 0.0.0.0
+      PORT: 3000
+      VINEXT_TRUST_PROXY: "1"
+    ports:
+      - "127.0.0.1:${APP_PORT:-3000}:3000"
