@@ -198,7 +198,7 @@ export default function Home() {
   }, [locale]);
 
   return (
-    <main>
+    <main data-locale={locale}>
       <section className="hero" id="top">
         <div className="hero-image" aria-hidden="true" />
         <div className="hero-noise" aria-hidden="true" />
