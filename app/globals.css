@@ -1441,6 +1441,78 @@ footer > a:last-child {
   line-height: 1.85;
 }
 
+.hotel-expertise {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(76px, 10vw, 142px) 0;
+  color: var(--cream);
+  background: #10201e;
+}
+
+.hotel-expertise::before {
+  content: "";
+  position: absolute;
+  top: -45%;
+  right: -8%;
+  width: min(54vw, 720px);
+  aspect-ratio: 1;
+  border: 1px solid rgba(222, 193, 137, 0.26);
+  border-radius: 50%;
+}
+
+.hotel-expertise .shell {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 0.6fr 1.7fr 1fr;
+  gap: clamp(28px, 5vw, 90px);
+  align-items: end;
+}
+
+.hotel-expertise-mark {
+  color: var(--champagne);
+  font-family: var(--font-display), serif;
+  font-size: clamp(42px, 5vw, 76px);
+  letter-spacing: -0.08em;
+}
+
+.hotel-expertise .eyebrow {
+  color: var(--champagne);
+}
+
+.hotel-expertise h2 {
+  max-width: 760px;
+  margin: 20px 0 0;
+  font-family: var(--font-display), serif;
+  font-size: clamp(43px, 5.7vw, 82px);
+  font-weight: 400;
+  line-height: 0.96;
+  letter-spacing: -0.055em;
+}
+
+.hotel-expertise-copy {
+  display: grid;
+  gap: 30px;
+  padding-bottom: 5px;
+}
+
+.hotel-expertise-copy p {
+  margin: 0;
+  color: rgba(247, 242, 232, 0.78);
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+.hotel-expertise-copy span {
+  padding-top: 15px;
+  border-top: 1px solid rgba(247, 242, 232, 0.24);
+  color: var(--champagne);
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  line-height: 1.45;
+  text-transform: uppercase;
+}
+
 .hotel-collection {
   padding: 120px 0 150px;
 }
@@ -1826,6 +1898,15 @@ footer > a:last-child {
 }
 
 @media (max-width: 1000px) {
+  .hotel-expertise .shell {
+    grid-template-columns: 0.35fr 1.65fr;
+  }
+
+  .hotel-expertise-copy {
+    grid-column: 2;
+    max-width: 520px;
+  }
+
   .hotel-filters {
     grid-template-columns: 1fr 1fr;
   }
@@ -1844,6 +1925,26 @@ footer > a:last-child {
 }
 
 @media (max-width: 760px) {
+  .hotel-expertise {
+    padding: 76px 0;
+  }
+
+  .hotel-expertise .shell {
+    display: block;
+  }
+
+  .hotel-expertise-mark {
+    margin-bottom: 34px;
+  }
+
+  .hotel-expertise h2 {
+    font-size: clamp(43px, 13vw, 62px);
+  }
+
+  .hotel-expertise-copy {
+    margin-top: 40px;
+  }
+
   .hotel-hero {
     min-height: 720px;
   }

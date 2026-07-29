@@ -175,6 +175,11 @@ const copy = {
     heroAccent: "мыкты отелдери",
     heroText:
       "Шаардык иконалардан алыскы курортторго чейин — ар бир сапар үчүн кылдат тандалган коллекция.",
+    expertiseLabel: "GLOBAL TRAVEL SOLUTIONS · HOTEL EXPERTISE",
+    expertiseTitle: "Дүйнөнүн эң мыкты отелдери — сиздин сапарыңыз үчүн.",
+    expertiseText:
+      "Биз дүйнөнүн алдыңкы мейманканалары, жеке виллалары жана өзгөчө курорттору менен иштейбиз. Ар бир сунуш сиздин стилиңизге, даталарыңызга жана каалоолоруңузга жараша түзүлөт.",
+    expertiseNote: "Өзгөчө сапарлар жекече мамиледен башталат.",
     searchLabel: "Отель издөө",
     searchPlaceholder: "Аталышы же багыты",
     regionLabel: "Регион",
@@ -216,6 +221,11 @@ const copy = {
     heroAccent: "finest hotels",
     heroText:
       "From city icons to remote retreats, a considered collection for every kind of journey.",
+    expertiseLabel: "GLOBAL TRAVEL SOLUTIONS · HOTEL EXPERTISE",
+    expertiseTitle: "The world’s finest hotels, chosen for your journey.",
+    expertiseText:
+      "We work with leading hotels, private villas and remarkable resorts across the world. Every recommendation is shaped around your style, dates and preferences.",
+    expertiseNote: "Exceptional journeys begin with a personal approach.",
     searchLabel: "Search hotels",
     searchPlaceholder: "Name or destination",
     regionLabel: "Region",
@@ -351,6 +361,20 @@ export default function HotelsPage() {
             <em>{t.heroAccent}</em>
           </h1>
           <p>{t.heroText}</p>
+        </div>
+      </section>
+
+      <section className="hotel-expertise" aria-label={t.expertiseLabel}>
+        <div className="shell">
+          <div className="hotel-expertise-mark" aria-hidden="true">GTS</div>
+          <div>
+            <p className="eyebrow">{t.expertiseLabel}</p>
+            <h2>{t.expertiseTitle}</h2>
+          </div>
+          <div className="hotel-expertise-copy">
+            <p>{t.expertiseText}</p>
+            <span>{t.expertiseNote}</span>
+          </div>
         </div>
       </section>
 
