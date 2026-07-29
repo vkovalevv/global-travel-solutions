@@ -194,6 +194,13 @@ export default function Home() {
   const t = translations[locale];
 
   useEffect(() => {
+    const requestedLocale = new URLSearchParams(window.location.search).get("lang");
+    if (requestedLocale === "en") {
+      setLocale("en");
+    }
+  }, []);
+
+  useEffect(() => {
     document.documentElement.lang = locale === "kg" ? "ky" : "en";
   }, [locale]);
 
@@ -351,7 +358,11 @@ export default function Home() {
                     <p>{service.text[locale]}</p>
                   </div>
                   <a
-                    href="#contact"
+                    href={
+                      service.number === "01"
+                        ? `/hotels?lang=${locale}`
+                        : "#contact"
+                    }
                     aria-label={`${t.services.discuss} ${service.title[locale]}`}
                   >
                     ↗
