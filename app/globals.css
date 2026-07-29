@@ -1586,40 +1586,30 @@ footer > a:last-child {
   min-width: 0;
   padding: 24px;
   color: var(--cream);
-  background:
-    radial-gradient(circle at 76% 24%, rgba(255, 255, 255, 0.14), transparent 31%),
-    linear-gradient(135deg, #314740, #101817);
+  background: #101817;
   overflow: hidden;
 }
 
-.hotel-card[data-region="europe"] .hotel-card-visual {
-  background:
-    radial-gradient(circle at 76% 24%, rgba(255, 255, 255, 0.16), transparent 31%),
-    linear-gradient(135deg, #8f7650, #2d2923);
+.hotel-card-visual img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.7s ease;
 }
 
-.hotel-card[data-region="middle-east"] .hotel-card-visual {
-  background:
-    radial-gradient(circle at 76% 24%, rgba(255, 255, 255, 0.18), transparent 31%),
-    linear-gradient(135deg, #9c7251, #33251e);
+.hotel-card:hover .hotel-card-visual img {
+  transform: scale(1.055);
 }
 
-.hotel-card[data-region="americas"] .hotel-card-visual {
-  background:
-    radial-gradient(circle at 76% 24%, rgba(255, 255, 255, 0.15), transparent 31%),
-    linear-gradient(135deg, #49616a, #17262c);
-}
-
-.hotel-card[data-region="africa"] .hotel-card-visual {
-  background:
-    radial-gradient(circle at 76% 24%, rgba(255, 255, 255, 0.15), transparent 31%),
-    linear-gradient(135deg, #8b5d3f, #2c211b);
-}
-
-.hotel-card[data-region="oceania"] .hotel-card-visual {
-  background:
-    radial-gradient(circle at 76% 24%, rgba(255, 255, 255, 0.16), transparent 31%),
-    linear-gradient(135deg, #376269, #12282c);
+.hotel-card-visual::before {
+  inset: 0;
+  width: auto;
+  height: auto;
+  border: 0;
+  border-radius: 0;
+  background: linear-gradient(180deg, rgba(6, 14, 13, 0.05) 20%, rgba(6, 14, 13, 0.72) 100%);
 }
 
 .hotel-card-visual::before,
@@ -1628,13 +1618,6 @@ footer > a:last-child {
   position: absolute;
   border: 1px solid rgba(240, 234, 223, 0.18);
   border-radius: 50%;
-}
-
-.hotel-card-visual::before {
-  top: -35%;
-  right: -10%;
-  width: 230px;
-  height: 230px;
 }
 
 .hotel-card-visual::after {
@@ -1646,7 +1629,7 @@ footer > a:last-child {
 
 .hotel-card-visual span {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   font-family: var(--font-display), serif;
   font-size: clamp(62px, 7vw, 104px);
   line-height: 0.72;
@@ -1655,7 +1638,7 @@ footer > a:last-child {
 
 .hotel-card-visual strong {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   color: var(--champagne);
   font-family: var(--font-display), serif;
   font-size: 28px;

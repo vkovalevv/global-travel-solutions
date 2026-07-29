@@ -27,6 +27,7 @@ const hotels = [
     region: "asia",
     type: "city",
     code: "HKG",
+    image: "/images/hotel-collection/rosewood-hong-kong.jpg",
     text: {
       kg: "Victoria Harbour жээгиндеги панорамалык көрүнүштөрү, жеке батлер кызматы жана өзгөчө гастрономиясы бар бийик шаардык резиденция.",
       en: "A vertical waterfront estate with panoramic Victoria Harbour views, personal butler service and destination dining.",
@@ -39,6 +40,7 @@ const hotels = [
     region: "asia",
     type: "city",
     code: "BKK",
+    image: "/images/hotel-collection/four-seasons-bangkok.jpg",
     text: {
       kg: "Чао Прайя дарыясынын жээгиндеги заманбап шаардык курорт: чоң мейкиндиктер, искусство жана мыкты ресторандар.",
       en: "A contemporary urban resort on the Chao Phraya River, combining generous spaces, art and world-class dining.",
@@ -51,6 +53,7 @@ const hotels = [
     region: "asia",
     type: "wellness",
     code: "BKK",
+    image: "/images/hotel-collection/capella-bangkok.jpg",
     text: {
       kg: "Дарыяга караган 101 бөлмө жана вилла, тынч атмосфера жана жеке маршруттарды түзгөн Capella Culturists кызматы.",
       en: "A serene riverside retreat with 101 river-facing rooms and villas, plus highly personal Capella Culturist service.",
@@ -63,6 +66,7 @@ const hotels = [
     region: "europe",
     type: "boutique",
     code: "COM",
+    image: "/images/hotel-collection/passalacqua.jpg",
     text: {
       kg: "XVIII кылымдагы виллада жайгашкан 24 бөлмөлүү камерный отель — 2025-жылдын Европадагы мыкты жана мыкты бутик-отели.",
       en: "An intimate 24-room retreat in an 18th-century villa, named Europe’s Best Hotel and Best Boutique Hotel for 2025.",
@@ -75,6 +79,7 @@ const hotels = [
     region: "asia",
     type: "heritage",
     code: "SIN",
+    image: "/images/hotel-collection/raffles-singapore.jpg",
     text: {
       kg: "1899-жылдан берки тарых, ак колониалдык архитектура, легендарлуу батлер кызматы жана Singapore Sling мекени.",
       en: "A grande dame since 1899, known for white colonial architecture, legendary butler service and the Singapore Sling.",
@@ -87,6 +92,7 @@ const hotels = [
     region: "middle-east",
     type: "beach",
     code: "DXB",
+    image: "/images/hotel-collection/atlantis-the-royal.jpg",
     text: {
       kg: "Palm Jumeirah аралындагы масштабдуу жээк курорту, белгилүү ресторандар жана 2025-жылдын Best Beach Hotel сыйлыгы.",
       en: "A spectacular Palm Jumeirah resort with celebrated restaurants and the 2025 Best Beach Hotel award.",
@@ -99,6 +105,7 @@ const hotels = [
     region: "americas",
     type: "wellness",
     code: "MID",
+    image: "/images/hotel-collection/chable-yucatan.jpg",
     text: {
       kg: "Юкатандын жаратылышына аралашкан hacienda-курорт: жеке casitaлар, cenote жанындагы spa жана майя салттары.",
       en: "A hacienda retreat immersed in Yucatán nature, with private casitas, a cenote-side spa and Mayan traditions.",
@@ -111,6 +118,7 @@ const hotels = [
     region: "americas",
     type: "beach",
     code: "RIO",
+    image: "/images/hotel-collection/copacabana-palace.jpg",
     text: {
       kg: "Копакабана жээгиндеги легендарлуу Art Deco сарайы — Рионун энергиясы, тарыхы жана майрамдык атмосферасы.",
       en: "A legendary Art Deco palace on Copacabana Beach, capturing Rio’s energy, history and celebratory spirit.",
@@ -123,6 +131,7 @@ const hotels = [
     region: "oceania",
     type: "heritage",
     code: "SYD",
+    image: "/images/hotel-collection/capella-sydney.jpg",
     text: {
       kg: "Калыбына келтирилген тарыхый имараттагы тынч люкс-отель, Сидней булуңуна жана Opera Houseка жакын.",
       en: "Quiet luxury inside a restored heritage landmark, moments from Sydney Harbour and the Opera House.",
@@ -135,6 +144,7 @@ const hotels = [
     region: "africa",
     type: "heritage",
     code: "RAK",
+    image: "/images/hotel-collection/royal-mansour.jpg",
     text: {
       kg: "Жеке riadдардан турган медина ичиндеги сарай: марокколук кол өнөрчүлүк, купуялык жана өзгөчө сервис.",
       en: "A palace within the medina composed of private riads, showcasing Moroccan craft, privacy and exceptional service.",
@@ -147,6 +157,7 @@ const hotels = [
     region: "europe",
     type: "city",
     code: "LON",
+    image: "/images/hotel-collection/claridges.jpg",
     text: {
       kg: "Mayfair жүрөгүндөгү британдык классика: Art Deco интерьерлери, салттуу чай жана кылдат жекече мамиле.",
       en: "A Mayfair icon defined by Art Deco interiors, celebrated afternoon tea and polished personal service.",
@@ -159,6 +170,7 @@ const hotels = [
     region: "europe",
     type: "beach",
     code: "ATH",
+    image: "/images/hotel-collection/four-seasons-astir.jpg",
     text: {
       kg: "Афина Ривьерасындагы жарым арал курорту: жеке пляждар, Эгей деңизинин көрүнүшү жана шаарга оңой жетүү.",
       en: "A peninsula resort on the Athens Riviera with private beaches, Aegean views and easy access to the city.",
@@ -416,6 +428,7 @@ export default function HotelsPage() {
                   key={hotel.name}
                 >
                   <div className="hotel-card-visual" aria-hidden="true">
+                    <img src={hotel.image} alt="" loading="lazy" />
                     <span>{hotel.code}</span>
                     <strong>{String(hotel.rank).padStart(2, "0")}</strong>
                   </div>
