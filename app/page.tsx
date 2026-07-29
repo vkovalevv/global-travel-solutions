@@ -453,13 +453,6 @@ export default function Home() {
               global74gts@gmail.com <span>↗</span>
             </a>
             <div className="messengers">
-              <a
-                href="https://wa.me/996554155955"
-                target="_blank"
-                rel="noreferrer"
-              >
-                WhatsApp ↗
-              </a>
               <a href="tel:+996554155955">+996 554 155 955 ↗</a>
             </div>
           </div>
