@@ -11,6 +11,19 @@
   --font-sans: "Avenir Next", "Avenir", "Helvetica Neue", Arial, sans-serif;
 }
 
+.arrow-up-right {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  flex: 0 0 auto;
+  overflow: visible;
+  vertical-align: -0.12em;
+  stroke: currentColor;
+  stroke-width: 1.45;
+  stroke-linecap: square;
+  stroke-linejoin: miter;
+}
+
 * {
   box-sizing: border-box;
 }

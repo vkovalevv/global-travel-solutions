@@ -2,6 +2,8 @@
 
 import { useEffect, useState } from "react";
 
+import { ArrowUpRight } from "./arrow-up-right";
+
 type Locale = "kg" | "en";
 
 const services = [
@@ -249,7 +251,10 @@ export default function Home() {
             </div>
 
             <a className="nav-contact" href="#contact">
-              {t.nav.contact} <span>↗</span>
+              {t.nav.contact}{" "}
+              <span>
+                <ArrowUpRight />
+              </span>
             </a>
 
             <details className="mobile-menu">
@@ -365,7 +370,7 @@ export default function Home() {
                     }
                     aria-label={`${t.services.discuss} ${service.title[locale]}`}
                   >
-                    ↗
+                    <ArrowUpRight />
                   </a>
                 </div>
               </article>
@@ -450,10 +455,15 @@ export default function Home() {
               className="email-link"
               href="mailto:global74gts@gmail.com"
             >
-              global74gts@gmail.com <span>↗</span>
+              global74gts@gmail.com{" "}
+              <span>
+                <ArrowUpRight />
+              </span>
             </a>
             <div className="messengers">
-              <a href="tel:+996554155955">+996 554 155 955 ↗</a>
+              <a href="tel:+996554155955">
+                +996 554 155 955 <ArrowUpRight />
+              </a>
             </div>
           </div>
 

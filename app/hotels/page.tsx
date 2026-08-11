@@ -2,6 +2,8 @@
 
 import { useEffect, useMemo, useState } from "react";
 
+import { ArrowUpRight } from "../arrow-up-right";
+
 type Locale = "kg" | "en";
 type Region =
   | "all"
@@ -456,7 +458,10 @@ export default function HotelsPage() {
                       <span>{t.regions[hotel.region]}</span>
                       <span>{t.types[hotel.type]}</span>
                       <a href={`/?lang=${locale}#contact`}>
-                        {t.request} <b>↗</b>
+                        {t.request}{" "}
+                        <b>
+                          <ArrowUpRight />
+                        </b>
                       </a>
                     </div>
                   </div>
@@ -477,7 +482,7 @@ export default function HotelsPage() {
               target="_blank"
               rel="noreferrer"
             >
-              {t.sourceLink} ↗
+              {t.sourceLink} <ArrowUpRight />
             </a>
           </p>
         </div>
@@ -489,7 +494,10 @@ export default function HotelsPage() {
           <h2>{t.contactTitle}</h2>
           <p>{t.contactText}</p>
           <a href={`/?lang=${locale}#contact`}>
-            {t.contactButton} <b>↗</b>
+            {t.contactButton}{" "}
+            <b>
+              <ArrowUpRight />
+            </b>
           </a>
         </div>
       </section>
