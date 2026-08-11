@@ -13,10 +13,10 @@ Cloudflare. Команды выполняются по очереди в Termina
 
 Домен и Worker должны находиться в одном аккаунте Cloudflare.
 
-## 1. Скачать подготовленную ветку
+## 1. Скачать проект
 
 ```bash
-git clone --branch cloudflare-workers-deploy --single-branch https://github.com/vkovalevv/global-travel-solutions.git
+git clone https://github.com/vkovalevv/global-travel-solutions.git
 ```
 
 Перейти в каталог проекта:
@@ -179,10 +179,16 @@ curl -I https://example.kg/
 
 ## Последующие обновления сайта
 
+Перейти в основную ветку:
+
+```bash
+git switch main
+```
+
 Получить изменения из GitHub:
 
 ```bash
-git pull
+git pull --ff-only origin main
 ```
 
 Установить зависимости, проверить сборку и опубликовать новую версию:
